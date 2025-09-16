@@ -9,7 +9,7 @@ function App() {
       {/* Header de la aplicación */}
       <header className="app-header">
         <h1>🚀 Mi Primera App React</h1>
-        <p>Consumiendo API de JSONPlaceholder</p>
+        <p>HECHA POR: VALENTINA MEJIA</p>
       </header>
 
       {/* Contenido principal */}
