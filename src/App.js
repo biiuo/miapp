@@ -1,23 +1,35 @@
-import logo from './logo.svg';
+// src/App.js
+import React from 'react';
+import PostsList from './component/PostCardList';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      {/* Header de la aplicación */}
+      <header className="app-header">
+        <h1>🚀 Mi Primera App React</h1>
+        <p>Consumiendo API de JSONPlaceholder</p>
       </header>
+
+      {/* Contenido principal */}
+      <main className="app-main">
+        <PostsList />
+      </main>
+
+      {/* Footer */}
+      <footer className="app-footer">
+        <p>
+          Hecho con ❤️ en React | 
+          API: <a 
+            href="https://jsonplaceholder.typicode.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            JSONPlaceholder
+          </a>
+        </p>
+      </footer>
     </div>
   );
 }
